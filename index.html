@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock with Themes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="clock-container">
+        <div class="clock" id="clock"></div>
+        <div class="date" id="date"></div>
+    </div>
+    
+    <div class="settings">
+        <label for="format">Time Format:</label>
+        <select id="format">
+            <option value="12">12-hour</option>
+            <option value="24">24-hour</option>
+        </select>
+
+        <label for="theme">Theme:</label>
+        <select id="theme">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+            <option value="neon">Neon</option>
+        </select>
+
+        <label for="alarm">Set Alarm:</label>
+        <input type="time" id="alarm-time">
+        <button id="set-alarm">Set Alarm</button>
+        <button id="cancel-alarm">Cancel Alarm</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
